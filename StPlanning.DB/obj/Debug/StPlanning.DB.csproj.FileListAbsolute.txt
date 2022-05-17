@@ -1,0 +1,14 @@
+E:\WORKDIR\StPlanning-2.0.0\StPlanning.DB\bin\Debug\StPlanning.DB.dll.config
+E:\WORKDIR\StPlanning-2.0.0\StPlanning.DB\bin\Debug\StPlanning.DB.dll
+E:\WORKDIR\StPlanning-2.0.0\StPlanning.DB\bin\Debug\StPlanning.DB.pdb
+E:\WORKDIR\StPlanning-2.0.0\StPlanning.DB\bin\Debug\EntityFramework.dll
+E:\WORKDIR\StPlanning-2.0.0\StPlanning.DB\bin\Debug\EntityFramework.SqlServer.dll
+E:\WORKDIR\StPlanning-2.0.0\StPlanning.DB\bin\Debug\SQLite.CodeFirst.dll
+E:\WORKDIR\StPlanning-2.0.0\StPlanning.DB\bin\Debug\System.Data.SQLite.dll
+E:\WORKDIR\StPlanning-2.0.0\StPlanning.DB\bin\Debug\System.Data.SQLite.EF6.dll
+E:\WORKDIR\StPlanning-2.0.0\StPlanning.DB\bin\Debug\System.Data.SQLite.Linq.dll
+E:\WORKDIR\StPlanning-2.0.0\StPlanning.DB\bin\Debug\EntityFramework.xml
+E:\WORKDIR\StPlanning-2.0.0\StPlanning.DB\bin\Debug\EntityFramework.SqlServer.xml
+E:\WORKDIR\StPlanning-2.0.0\StPlanning.DB\bin\Debug\System.Data.SQLite.xml
+E:\WORKDIR\StPlanning-2.0.0\StPlanning.DB\obj\Debug\StPlanning.DB.dll
+E:\WORKDIR\StPlanning-2.0.0\StPlanning.DB\obj\Debug\StPlanning.DB.pdb

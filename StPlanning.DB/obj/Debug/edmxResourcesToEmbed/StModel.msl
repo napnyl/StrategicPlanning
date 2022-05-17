@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="StLiteDBModelStoreContainer" CdmEntityContainer="StLiteDBEntities">
+    <EntitySetMapping Name="tblDa">
+      <EntityTypeMapping TypeName="StLiteDBModel.tblDa">
+        <MappingFragment StoreEntitySet="tblDa">
+          <ScalarProperty Name="Finished" ColumnName="Finished" />
+          <ScalarProperty Name="DateUpdate" ColumnName="DateUpdate" />
+          <ScalarProperty Name="ComputerUpdate" ColumnName="ComputerUpdate" />
+          <ScalarProperty Name="UserUpdate" ColumnName="UserUpdate" />
+          <ScalarProperty Name="DateInsert" ColumnName="DateInsert" />
+          <ScalarProperty Name="ComputerInsert" ColumnName="ComputerInsert" />
+          <ScalarProperty Name="UserInsert" ColumnName="UserInsert" />
+          <ScalarProperty Name="ColNumber" ColumnName="ColNumber" />
+          <ScalarProperty Name="RowNumber" ColumnName="RowNumber" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="IdProject" ColumnName="IdProject" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblDaDetail">
+      <EntityTypeMapping TypeName="StLiteDBModel.tblDaDetail">
+        <MappingFragment StoreEntitySet="tblDaDetail">
+          <ScalarProperty Name="DateUpdate" ColumnName="DateUpdate" />
+          <ScalarProperty Name="ComputerUpdate" ColumnName="ComputerUpdate" />
+          <ScalarProperty Name="UserUpdate" ColumnName="UserUpdate" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="ColName" ColumnName="ColName" />
+          <ScalarProperty Name="RowName" ColumnName="RowName" />
+          <ScalarProperty Name="Col" ColumnName="Col" />
+          <ScalarProperty Name="Row" ColumnName="Row" />
+          <ScalarProperty Name="IdDa" ColumnName="IdDa" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblDiagram">
+      <EntityTypeMapping TypeName="StLiteDBModel.tblDiagram">
+        <MappingFragment StoreEntitySet="tblDiagram">
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="ToY" ColumnName="ToY" />
+          <ScalarProperty Name="ToX" ColumnName="ToX" />
+          <ScalarProperty Name="FromY" ColumnName="FromY" />
+          <ScalarProperty Name="FromX" ColumnName="FromX" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Key" ColumnName="Key" />
+          <ScalarProperty Name="IdProject" ColumnName="IdProject" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblDo">
+      <EntityTypeMapping TypeName="StLiteDBModel.tblDo">
+        <MappingFragment StoreEntitySet="tblDo">
+          <ScalarProperty Name="Finished" ColumnName="Finished" />
+          <ScalarProperty Name="DateUpdate" ColumnName="DateUpdate" />
+          <ScalarProperty Name="ComputerUpdate" ColumnName="ComputerUpdate" />
+          <ScalarProperty Name="UserUpdate" ColumnName="UserUpdate" />
+          <ScalarProperty Name="DateInsert" ColumnName="DateInsert" />
+          <ScalarProperty Name="ComputerInsert" ColumnName="ComputerInsert" />
+          <ScalarProperty Name="UserInsert" ColumnName="UserInsert" />
+          <ScalarProperty Name="ColNumber" ColumnName="ColNumber" />
+          <ScalarProperty Name="RowNumber" ColumnName="RowNumber" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="IdProject" ColumnName="IdProject" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblDoDetail">
+      <EntityTypeMapping TypeName="StLiteDBModel.tblDoDetail">
+        <MappingFragment StoreEntitySet="tblDoDetail">
+          <ScalarProperty Name="DateUpdate" ColumnName="DateUpdate" />
+          <ScalarProperty Name="ComputerUpdate" ColumnName="ComputerUpdate" />
+          <ScalarProperty Name="UserUpdate" ColumnName="UserUpdate" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="ColName" ColumnName="ColName" />
+          <ScalarProperty Name="RowName" ColumnName="RowName" />
+          <ScalarProperty Name="Col" ColumnName="Col" />
+          <ScalarProperty Name="Row" ColumnName="Row" />
+          <ScalarProperty Name="IdDo" ColumnName="IdDo" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblFa">
+      <EntityTypeMapping TypeName="StLiteDBModel.tblFa">
+        <MappingFragment StoreEntitySet="tblFa">
+          <ScalarProperty Name="Finished" ColumnName="Finished" />
+          <ScalarProperty Name="DateUpdate" ColumnName="DateUpdate" />
+          <ScalarProperty Name="ComputerUpdate" ColumnName="ComputerUpdate" />
+          <ScalarProperty Name="UserUpdate" ColumnName="UserUpdate" />
+          <ScalarProperty Name="DateInsert" ColumnName="DateInsert" />
+          <ScalarProperty Name="ComputerInsert" ColumnName="ComputerInsert" />
+          <ScalarProperty Name="UserInsert" ColumnName="UserInsert" />
+          <ScalarProperty Name="ColNumber" ColumnName="ColNumber" />
+          <ScalarProperty Name="RowNumber" ColumnName="RowNumber" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="IdProject" ColumnName="IdProject" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblFaDetail">
+      <EntityTypeMapping TypeName="StLiteDBModel.tblFaDetail">
+        <MappingFragment StoreEntitySet="tblFaDetail">
+          <ScalarProperty Name="DateUpdate" ColumnName="DateUpdate" />
+          <ScalarProperty Name="ComputerUpdate" ColumnName="ComputerUpdate" />
+          <ScalarProperty Name="UserUpdate" ColumnName="UserUpdate" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="ColName" ColumnName="ColName" />
+          <ScalarProperty Name="RowName" ColumnName="RowName" />
+          <ScalarProperty Name="Col" ColumnName="Col" />
+          <ScalarProperty Name="Row" ColumnName="Row" />
+          <ScalarProperty Name="IdFa" ColumnName="IdFa" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblFo">
+      <EntityTypeMapping TypeName="StLiteDBModel.tblFo">
+        <MappingFragment StoreEntitySet="tblFo">
+          <ScalarProperty Name="Finished" ColumnName="Finished" />
+          <ScalarProperty Name="DateUpdate" ColumnName="DateUpdate" />
+          <ScalarProperty Name="ComputerUpdate" ColumnName="ComputerUpdate" />
+          <ScalarProperty Name="UserUpdate" ColumnName="UserUpdate" />
+          <ScalarProperty Name="DateInsert" ColumnName="DateInsert" />
+          <ScalarProperty Name="ComputerInsert" ColumnName="ComputerInsert" />
+          <ScalarProperty Name="UserInsert" ColumnName="UserInsert" />
+          <ScalarProperty Name="ColNumber" ColumnName="ColNumber" />
+          <ScalarProperty Name="RowNumber" ColumnName="RowNumber" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="IdProject" ColumnName="IdProject" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblFoda">
+      <EntityTypeMapping TypeName="StLiteDBModel.tblFoda">
+        <MappingFragment StoreEntitySet="tblFoda">
+          <ScalarProperty Name="DateUpdate" ColumnName="DateUpdate" />
+          <ScalarProperty Name="ComputerUpdate" ColumnName="ComputerUpdate" />
+          <ScalarProperty Name="UserUpdate" ColumnName="UserUpdate" />
+          <ScalarProperty Name="DateInsert" ColumnName="DateInsert" />
+          <ScalarProperty Name="ComputerInsert" ColumnName="ComputerInsert" />
+          <ScalarProperty Name="UserInsert" ColumnName="UserInsert" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="IdProject" ColumnName="IdProject" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblFodaDetail">
+      <EntityTypeMapping TypeName="StLiteDBModel.tblFodaDetail">
+        <MappingFragment StoreEntitySet="tblFodaDetail">
+          <ScalarProperty Name="DateUpdate" ColumnName="DateUpdate" />
+          <ScalarProperty Name="ComputerUpdate" ColumnName="ComputerUpdate" />
+          <ScalarProperty Name="UserUpdate" ColumnName="UserUpdate" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Col" ColumnName="Col" />
+          <ScalarProperty Name="Row" ColumnName="Row" />
+          <ScalarProperty Name="ColumnName" ColumnName="ColumnName" />
+          <ScalarProperty Name="IdFoda" ColumnName="IdFoda" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblFoDetail">
+      <EntityTypeMapping TypeName="StLiteDBModel.tblFoDetail">
+        <MappingFragment StoreEntitySet="tblFoDetail">
+          <ScalarProperty Name="DateUpdate" ColumnName="DateUpdate" />
+          <ScalarProperty Name="ComputerUpdate" ColumnName="ComputerUpdate" />
+          <ScalarProperty Name="UserUpdate" ColumnName="UserUpdate" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="ColName" ColumnName="ColName" />
+          <ScalarProperty Name="RowName" ColumnName="RowName" />
+          <ScalarProperty Name="Col" ColumnName="Col" />
+          <ScalarProperty Name="Row" ColumnName="Row" />
+          <ScalarProperty Name="IdFo" ColumnName="IdFo" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblManagerSt">
+      <EntityTypeMapping TypeName="StLiteDBModel.tblManagerSt">
+        <MappingFragment StoreEntitySet="tblManagerSt">
+          <ScalarProperty Name="Finished" ColumnName="Finished" />
+          <ScalarProperty Name="DateUpdate" ColumnName="DateUpdate" />
+          <ScalarProperty Name="ComputerUpdate" ColumnName="ComputerUpdate" />
+          <ScalarProperty Name="UserUpdate" ColumnName="UserUpdate" />
+          <ScalarProperty Name="DateInsert" ColumnName="DateInsert" />
+          <ScalarProperty Name="ComputerInsert" ColumnName="ComputerInsert" />
+          <ScalarProperty Name="UserInsert" ColumnName="UserInsert" />
+          <ScalarProperty Name="Perspective" ColumnName="Perspective" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="ManagerStrategy" ColumnName="ManagerStrategy" />
+          <ScalarProperty Name="Strategies" ColumnName="Strategies" />
+          <ScalarProperty Name="IdProject" ColumnName="IdProject" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblStrategiesBasic">
+      <EntityTypeMapping TypeName="StLiteDBModel.tblStrategiesBasic">
+        <MappingFragment StoreEntitySet="tblStrategiesBasic">
+          <ScalarProperty Name="Finished" ColumnName="Finished" />
+          <ScalarProperty Name="DateUpdate" ColumnName="DateUpdate" />
+          <ScalarProperty Name="ComputerUpdate" ColumnName="ComputerUpdate" />
+          <ScalarProperty Name="UserUpdate" ColumnName="UserUpdate" />
+          <ScalarProperty Name="DateInsert" ColumnName="DateInsert" />
+          <ScalarProperty Name="ComputerInsert" ColumnName="ComputerInsert" />
+          <ScalarProperty Name="UserInsert" ColumnName="UserInsert" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="Strategy" ColumnName="Strategy" />
+          <ScalarProperty Name="Crossed" ColumnName="Crossed" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="IdProject" ColumnName="IdProject" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblBsc">
+      <EntityTypeMapping TypeName="StLiteDBModel.tblBsc">
+        <MappingFragment StoreEntitySet="tblBsc">
+          <ScalarProperty Name="DateEnd" ColumnName="DateEnd" />
+          <ScalarProperty Name="DateInit" ColumnName="DateInit" />
+          <ScalarProperty Name="ImpleResp" ColumnName="ImpleResp" />
+          <ScalarProperty Name="StInitiative" ColumnName="StInitiative" />
+          <ScalarProperty Name="GoalResp" ColumnName="GoalResp" />
+          <ScalarProperty Name="GreVar" ColumnName="GreVar" />
+          <ScalarProperty Name="YellVar" ColumnName="YellVar" />
+          <ScalarProperty Name="RedVar" ColumnName="RedVar" />
+          <ScalarProperty Name="Goal" ColumnName="Goal" />
+          <ScalarProperty Name="Levels" ColumnName="Levels" />
+          <ScalarProperty Name="CaptDataFreq" ColumnName="CaptDataFreq" />
+          <ScalarProperty Name="ActuationFreq" ColumnName="ActuationFreq" />
+          <ScalarProperty Name="OpDefinition" ColumnName="OpDefinition" />
+          <ScalarProperty Name="Kpis" ColumnName="Kpis" />
+          <ScalarProperty Name="StObjectives" ColumnName="StObjectives" />
+          <ScalarProperty Name="ValueSt" ColumnName="ValueSt" />
+          <ScalarProperty Name="Perspective" ColumnName="Perspective" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="MainLevel" ColumnName="MainLevel" />
+          <ScalarProperty Name="IdProject" ColumnName="IdProject" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblProject">
+      <EntityTypeMapping TypeName="StLiteDBModel.tblProject">
+        <MappingFragment StoreEntitySet="tblProject">
+          <ScalarProperty Name="DateUpdate" ColumnName="DateUpdate" />
+          <ScalarProperty Name="ComputerUpdate" ColumnName="ComputerUpdate" />
+          <ScalarProperty Name="UserUpdate" ColumnName="UserUpdate" />
+          <ScalarProperty Name="DateInsert" ColumnName="DateInsert" />
+          <ScalarProperty Name="ComputerInsert" ColumnName="ComputerInsert" />
+          <ScalarProperty Name="UserInsert" ColumnName="UserInsert" />
+          <ScalarProperty Name="BscPubUpload4" ColumnName="BscPubUpload4" />
+          <ScalarProperty Name="BscPubUpload3" ColumnName="BscPubUpload3" />
+          <ScalarProperty Name="BscPubUpload2" ColumnName="BscPubUpload2" />
+          <ScalarProperty Name="BscPubUpload1" ColumnName="BscPubUpload1" />
+          <ScalarProperty Name="BscUpload4" ColumnName="BscUpload4" />
+          <ScalarProperty Name="BscUpload3" ColumnName="BscUpload3" />
+          <ScalarProperty Name="BscUpload2" ColumnName="BscUpload2" />
+          <ScalarProperty Name="BscUpload1" ColumnName="BscUpload1" />
+          <ScalarProperty Name="DiagramPublicUpload" ColumnName="DiagramPublicUpload" />
+          <ScalarProperty Name="DiagramPrivateUpload" ColumnName="DiagramPrivateUpload" />
+          <ScalarProperty Name="StrategiesLevel4Upload" ColumnName="StrategiesLevel4Upload" />
+          <ScalarProperty Name="StrategiesLevel3Upload" ColumnName="StrategiesLevel3Upload" />
+          <ScalarProperty Name="StrategiesLevel2Upload" ColumnName="StrategiesLevel2Upload" />
+          <ScalarProperty Name="StrategiesManagerUpload" ColumnName="StrategiesManagerUpload" />
+          <ScalarProperty Name="StrategiesBasicUpload" ColumnName="StrategiesBasicUpload" />
+          <ScalarProperty Name="DaUpload" ColumnName="DaUpload" />
+          <ScalarProperty Name="FaUpload" ColumnName="FaUpload" />
+          <ScalarProperty Name="DoUpload" ColumnName="DoUpload" />
+          <ScalarProperty Name="FoUpload" ColumnName="FoUpload" />
+          <ScalarProperty Name="FodaUpload" ColumnName="FodaUpload" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Vision" ColumnName="Vision" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1054fb40a0564c20808ddba628f9e3e7" Name="Diagram1" ZoomLevel="91">
+        <EntityTypeShape EntityType="StLiteDBModel.tblDa" Width="1.5" PointX="3" PointY="16.875" />
+        <EntityTypeShape EntityType="StLiteDBModel.tblDaDetail" Width="1.5" PointX="5.25" PointY="17.25" />
+        <EntityTypeShape EntityType="StLiteDBModel.tblDiagram" Width="1.5" PointX="3" PointY="31.875" />
+        <EntityTypeShape EntityType="StLiteDBModel.tblDo" Width="1.5" PointX="3" PointY="2.875" />
+        <EntityTypeShape EntityType="StLiteDBModel.tblDoDetail" Width="1.5" PointX="5.25" PointY="3.25" />
+        <EntityTypeShape EntityType="StLiteDBModel.tblFa" Width="1.5" PointX="3" PointY="7.5" />
+        <EntityTypeShape EntityType="StLiteDBModel.tblFaDetail" Width="1.5" PointX="5.25" PointY="7.875" />
+        <EntityTypeShape EntityType="StLiteDBModel.tblFo" Width="1.5" PointX="3" PointY="35.625" />
+        <EntityTypeShape EntityType="StLiteDBModel.tblFoda" Width="1.5" PointX="3" PointY="40.25" />
+        <EntityTypeShape EntityType="StLiteDBModel.tblFodaDetail" Width="1.5" PointX="5.25" PointY="40.5" />
+        <EntityTypeShape EntityType="StLiteDBModel.tblFoDetail" Width="1.5" PointX="5.25" PointY="36" />
+        <EntityTypeShape EntityType="StLiteDBModel.tblManagerSt" Width="1.5" PointX="3" PointY="12.125" />
+        <EntityTypeShape EntityType="StLiteDBModel.tblStrategiesBasic" Width="1.5" PointX="3" PointY="21.5" />
+        <AssociationConnector Association="StLiteDBModel.FK_tblDaDetail_0_0" />
+        <AssociationConnector Association="StLiteDBModel.FK_tblDoDetail_0_0" />
+        <AssociationConnector Association="StLiteDBModel.FK_tblFaDetail_0_0" />
+        <AssociationConnector Association="StLiteDBModel.FK_tblFoDetail_0_0" />
+        <AssociationConnector Association="StLiteDBModel.FK_tblFodaDetail_0_0" />
+        <EntityTypeShape EntityType="StLiteDBModel.tblBsc" Width="1.5" PointX="3" PointY="44.625" />
+        <EntityTypeShape EntityType="StLiteDBModel.tblProject" Width="1.5" PointX="0.75" PointY="19" />
+        <AssociationConnector Association="StLiteDBModel.FK_tblBsc_0_0" />
+        <AssociationConnector Association="StLiteDBModel.FK_tblDa_0_0" />
+        <AssociationConnector Association="StLiteDBModel.FK_tblDiagram_0_0" />
+        <AssociationConnector Association="StLiteDBModel.FK_tblDo_0_0" />
+        <AssociationConnector Association="StLiteDBModel.FK_tblFa_0_0" />
+        <AssociationConnector Association="StLiteDBModel.FK_tblFo_0_0" />
+        <AssociationConnector Association="StLiteDBModel.FK_tblFoda_0_0" />
+        <AssociationConnector Association="StLiteDBModel.FK_tblManagerSt_0_0" />
+        <AssociationConnector Association="StLiteDBModel.FK_tblStrategiesBasic_0_0" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

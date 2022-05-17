@@ -1,0 +1,518 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="StLiteDBModel.Store" Provider="System.Data.SQLite.EF6" ProviderManifestToken="data source=E:\WorkDirPruebas\StPlanning-2.0.0\StPlanning\bin\Debug\StLiteDB.sqlite" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tblBsc">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdProject" Type="integer" Nullable="false" />
+    <Property Name="MainLevel" Type="int" />
+    <Property Name="Type" Type="int" />
+    <Property Name="Perspective" Type="varchar" MaxLength="250" />
+    <Property Name="ValueSt" Type="varchar" MaxLength="1024" />
+    <Property Name="StObjectives" Type="varchar" MaxLength="1024" />
+    <Property Name="Kpis" Type="varchar" MaxLength="500" />
+    <Property Name="OpDefinition" Type="varchar" MaxLength="1024" />
+    <Property Name="ActuationFreq" Type="varchar" MaxLength="250" />
+    <Property Name="CaptDataFreq" Type="varchar" MaxLength="500" />
+    <Property Name="Levels" Type="varchar" MaxLength="250" />
+    <Property Name="Goal" Type="varchar" MaxLength="250" />
+    <Property Name="RedVar" Type="varchar" MaxLength="250" />
+    <Property Name="YellVar" Type="varchar" MaxLength="250" />
+    <Property Name="GreVar" Type="varchar" MaxLength="250" />
+    <Property Name="GoalResp" Type="varchar" MaxLength="500" />
+    <Property Name="StInitiative" Type="varchar" MaxLength="1024" />
+    <Property Name="ImpleResp" Type="varchar" MaxLength="500" />
+    <Property Name="DateInit" Type="datetime" />
+    <Property Name="DateEnd" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblDa">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdProject" Type="integer" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="250" />
+    <Property Name="Description" Type="varchar" MaxLength="500" />
+    <Property Name="RowNumber" Type="int" />
+    <Property Name="ColNumber" Type="int" />
+    <Property Name="UserInsert" Type="varchar" MaxLength="250" />
+    <Property Name="ComputerInsert" Type="varchar" MaxLength="250" />
+    <Property Name="DateInsert" Type="datetime" />
+    <Property Name="UserUpdate" Type="varchar" MaxLength="250" />
+    <Property Name="ComputerUpdate" Type="varchar" MaxLength="250" />
+    <Property Name="DateUpdate" Type="datetime" />
+    <Property Name="Finished" Type="bit" />
+  </EntityType>
+  <EntityType Name="tblDaDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdDa" Type="integer" Nullable="false" />
+    <Property Name="Row" Type="int" />
+    <Property Name="Col" Type="int" />
+    <Property Name="RowName" Type="varchar" MaxLength="250" />
+    <Property Name="ColName" Type="varchar" MaxLength="250" />
+    <Property Name="Value" Type="int" />
+    <Property Name="UserUpdate" Type="varchar" MaxLength="250" />
+    <Property Name="ComputerUpdate" Type="varchar" MaxLength="250" />
+    <Property Name="DateUpdate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblDiagram">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdProject" Type="integer" Nullable="false" />
+    <Property Name="Key" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="Type" Type="int" />
+    <Property Name="FromX" Type="real" />
+    <Property Name="FromY" Type="real" />
+    <Property Name="ToX" Type="real" />
+    <Property Name="ToY" Type="real" />
+    <Property Name="Color" Type="int" />
+  </EntityType>
+  <EntityType Name="tblDo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdProject" Type="integer" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="250" />
+    <Property Name="Description" Type="varchar" MaxLength="500" />
+    <Property Name="RowNumber" Type="int" />
+    <Property Name="ColNumber" Type="int" />
+    <Property Name="UserInsert" Type="varchar" MaxLength="250" />
+    <Property Name="ComputerInsert" Type="varchar" MaxLength="250" />
+    <Property Name="DateInsert" Type="datetime" />
+    <Property Name="UserUpdate" Type="varchar" MaxLength="250" />
+    <Property Name="ComputerUpdate" Type="varchar" MaxLength="250" />
+    <Property Name="DateUpdate" Type="datetime" />
+    <Property Name="Finished" Type="bit" />
+  </EntityType>
+  <EntityType Name="tblDoDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdDo" Type="integer" Nullable="false" />
+    <Property Name="Row" Type="int" />
+    <Property Name="Col" Type="int" />
+    <Property Name="RowName" Type="varchar" MaxLength="250" />
+    <Property Name="ColName" Type="varchar" MaxLength="250" />
+    <Property Name="Value" Type="int" />
+    <Property Name="UserUpdate" Type="varchar" MaxLength="250" />
+    <Property Name="ComputerUpdate" Type="varchar" MaxLength="250" />
+    <Property Name="DateUpdate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblFa">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdProject" Type="integer" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="250" />
+    <Property Name="Description" Type="varchar" MaxLength="500" />
+    <Property Name="RowNumber" Type="int" />
+    <Property Name="ColNumber" Type="int" />
+    <Property Name="UserInsert" Type="varchar" MaxLength="250" />
+    <Property Name="ComputerInsert" Type="varchar" MaxLength="250" />
+    <Property Name="DateInsert" Type="datetime" />
+    <Property Name="UserUpdate" Type="varchar" MaxLength="250" />
+    <Property Name="ComputerUpdate" Type="varchar" MaxLength="250" />
+    <Property Name="DateUpdate" Type="datetime" />
+    <Property Name="Finished" Type="bit" />
+  </EntityType>
+  <EntityType Name="tblFaDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdFa" Type="integer" Nullable="false" />
+    <Property Name="Row" Type="int" />
+    <Property Name="Col" Type="int" />
+    <Property Name="RowName" Type="varchar" MaxLength="250" />
+    <Property Name="ColName" Type="varchar" MaxLength="250" />
+    <Property Name="Value" Type="int" />
+    <Property Name="UserUpdate" Type="varchar" MaxLength="250" />
+    <Property Name="ComputerUpdate" Type="varchar" MaxLength="250" />
+    <Property Name="DateUpdate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblFo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdProject" Type="integer" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="250" />
+    <Property Name="Description" Type="varchar" MaxLength="500" />
+    <Property Name="RowNumber" Type="int" />
+    <Property Name="ColNumber" Type="int" />
+    <Property Name="UserInsert" Type="varchar" MaxLength="250" />
+    <Property Name="ComputerInsert" Type="varchar" MaxLength="250" />
+    <Property Name="DateInsert" Type="datetime" />
+    <Property Name="UserUpdate" Type="varchar" MaxLength="250" />
+    <Property Name="ComputerUpdate" Type="varchar" MaxLength="250" />
+    <Property Name="DateUpdate" Type="datetime" />
+    <Property Name="Finished" Type="bit" />
+  </EntityType>
+  <EntityType Name="tblFoda">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdProject" Type="integer" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="250" />
+    <Property Name="Description" Type="varchar" MaxLength="500" />
+    <Property Name="UserInsert" Type="varchar" MaxLength="250" />
+    <Property Name="ComputerInsert" Type="varchar" MaxLength="250" />
+    <Property Name="DateInsert" Type="datetime" />
+    <Property Name="UserUpdate" Type="varchar" MaxLength="250" />
+    <Property Name="ComputerUpdate" Type="varchar" MaxLength="250" />
+    <Property Name="DateUpdate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblFodaDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdFoda" Type="integer" Nullable="false" />
+    <Property Name="ColumnName" Type="varchar" MaxLength="250" />
+    <Property Name="Row" Type="int" />
+    <Property Name="Col" Type="int" />
+    <Property Name="Value" Type="varchar" MaxLength="500" />
+    <Property Name="UserUpdate" Type="varchar" MaxLength="250" />
+    <Property Name="ComputerUpdate" Type="varchar" MaxLength="250" />
+    <Property Name="DateUpdate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblFoDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdFo" Type="integer" Nullable="false" />
+    <Property Name="Row" Type="int" />
+    <Property Name="Col" Type="int" />
+    <Property Name="RowName" Type="varchar" MaxLength="250" />
+    <Property Name="ColName" Type="varchar" MaxLength="250" />
+    <Property Name="Value" Type="int" />
+    <Property Name="UserUpdate" Type="varchar" MaxLength="250" />
+    <Property Name="ComputerUpdate" Type="varchar" MaxLength="250" />
+    <Property Name="DateUpdate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblManagerSt">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdProject" Type="integer" Nullable="false" />
+    <Property Name="Strategies" Type="varchar" MaxLength="1000" />
+    <Property Name="ManagerStrategy" Type="varchar" MaxLength="500" />
+    <Property Name="Color" Type="int" />
+    <Property Name="Level" Type="varchar" MaxLength="50" />
+    <Property Name="Perspective" Type="varchar" MaxLength="250" />
+    <Property Name="UserInsert" Type="varchar" MaxLength="250" />
+    <Property Name="ComputerInsert" Type="varchar" MaxLength="250" />
+    <Property Name="DateInsert" Type="datetime" />
+    <Property Name="UserUpdate" Type="varchar" MaxLength="250" />
+    <Property Name="ComputerUpdate" Type="varchar" MaxLength="250" />
+    <Property Name="DateUpdate" Type="datetime" />
+    <Property Name="Finished" Type="bit" />
+  </EntityType>
+  <EntityType Name="tblProject">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="250" />
+    <Property Name="Vision" Type="varchar" MaxLength="1024" />
+    <Property Name="Description" Type="varchar" MaxLength="250" />
+    <Property Name="FodaUpload" Type="bit" Nullable="false" />
+    <Property Name="FoUpload" Type="bit" Nullable="false" />
+    <Property Name="DoUpload" Type="bit" Nullable="false" />
+    <Property Name="FaUpload" Type="bit" Nullable="false" />
+    <Property Name="DaUpload" Type="bit" Nullable="false" />
+    <Property Name="StrategiesBasicUpload" Type="bit" Nullable="false" />
+    <Property Name="StrategiesManagerUpload" Type="bit" Nullable="false" />
+    <Property Name="StrategiesLevel2Upload" Type="bit" Nullable="false" />
+    <Property Name="StrategiesLevel3Upload" Type="bit" Nullable="false" />
+    <Property Name="StrategiesLevel4Upload" Type="bit" Nullable="false" />
+    <Property Name="DiagramPrivateUpload" Type="bit" Nullable="false" />
+    <Property Name="DiagramPublicUpload" Type="bit" Nullable="false" />
+    <Property Name="BscUpload1" Type="bit" Nullable="false" />
+    <Property Name="BscUpload2" Type="bit" Nullable="false" />
+    <Property Name="BscUpload3" Type="bit" Nullable="false" />
+    <Property Name="BscUpload4" Type="bit" Nullable="false" />
+    <Property Name="BscPubUpload1" Type="bit" Nullable="false" />
+    <Property Name="BscPubUpload2" Type="bit" Nullable="false" />
+    <Property Name="BscPubUpload3" Type="bit" Nullable="false" />
+    <Property Name="BscPubUpload4" Type="bit" Nullable="false" />
+    <Property Name="UserInsert" Type="varchar" MaxLength="250" />
+    <Property Name="ComputerInsert" Type="varchar" MaxLength="250" />
+    <Property Name="DateInsert" Type="datetime" />
+    <Property Name="UserUpdate" Type="varchar" MaxLength="250" />
+    <Property Name="ComputerUpdate" Type="varchar" MaxLength="250" />
+    <Property Name="DateUpdate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblStrategiesBasic">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdProject" Type="integer" Nullable="false" />
+    <Property Name="Type" Type="varchar" MaxLength="50" />
+    <Property Name="Crossed" Type="varchar" MaxLength="500" />
+    <Property Name="Strategy" Type="varchar" MaxLength="500" />
+    <Property Name="Color" Type="int" />
+    <Property Name="Level" Type="varchar" MaxLength="50" />
+    <Property Name="UserInsert" Type="varchar" MaxLength="250" />
+    <Property Name="ComputerInsert" Type="varchar" MaxLength="250" />
+    <Property Name="DateInsert" Type="datetime" />
+    <Property Name="UserUpdate" Type="varchar" MaxLength="250" />
+    <Property Name="ComputerUpdate" Type="varchar" MaxLength="250" />
+    <Property Name="DateUpdate" Type="datetime" />
+    <Property Name="Finished" Type="bit" />
+  </EntityType>
+  <Association Name="FK_tblBsc_0_0">
+    <End Role="tblProject" Type="Self.tblProject" Multiplicity="1" />
+    <End Role="tblBsc" Type="Self.tblBsc" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblProject">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblBsc">
+        <PropertyRef Name="IdProject" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblDa_0_0">
+    <End Role="tblProject" Type="Self.tblProject" Multiplicity="1" />
+    <End Role="tblDa" Type="Self.tblDa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblProject">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblDa">
+        <PropertyRef Name="IdProject" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblDaDetail_0_0">
+    <End Role="tblDa" Type="Self.tblDa" Multiplicity="1" />
+    <End Role="tblDaDetail" Type="Self.tblDaDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblDa">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblDaDetail">
+        <PropertyRef Name="IdDa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblDiagram_0_0">
+    <End Role="tblProject" Type="Self.tblProject" Multiplicity="1" />
+    <End Role="tblDiagram" Type="Self.tblDiagram" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblProject">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblDiagram">
+        <PropertyRef Name="IdProject" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblDo_0_0">
+    <End Role="tblProject" Type="Self.tblProject" Multiplicity="1" />
+    <End Role="tblDo" Type="Self.tblDo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblProject">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblDo">
+        <PropertyRef Name="IdProject" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblDoDetail_0_0">
+    <End Role="tblDo" Type="Self.tblDo" Multiplicity="1" />
+    <End Role="tblDoDetail" Type="Self.tblDoDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblDo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblDoDetail">
+        <PropertyRef Name="IdDo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblFa_0_0">
+    <End Role="tblProject" Type="Self.tblProject" Multiplicity="1" />
+    <End Role="tblFa" Type="Self.tblFa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblProject">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblFa">
+        <PropertyRef Name="IdProject" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblFaDetail_0_0">
+    <End Role="tblFa" Type="Self.tblFa" Multiplicity="1" />
+    <End Role="tblFaDetail" Type="Self.tblFaDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblFa">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblFaDetail">
+        <PropertyRef Name="IdFa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblFo_0_0">
+    <End Role="tblProject" Type="Self.tblProject" Multiplicity="1" />
+    <End Role="tblFo" Type="Self.tblFo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblProject">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblFo">
+        <PropertyRef Name="IdProject" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblFoda_0_0">
+    <End Role="tblProject" Type="Self.tblProject" Multiplicity="1" />
+    <End Role="tblFoda" Type="Self.tblFoda" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblProject">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblFoda">
+        <PropertyRef Name="IdProject" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblFodaDetail_0_0">
+    <End Role="tblFoda" Type="Self.tblFoda" Multiplicity="1" />
+    <End Role="tblFodaDetail" Type="Self.tblFodaDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblFoda">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblFodaDetail">
+        <PropertyRef Name="IdFoda" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblFoDetail_0_0">
+    <End Role="tblFo" Type="Self.tblFo" Multiplicity="1" />
+    <End Role="tblFoDetail" Type="Self.tblFoDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblFo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblFoDetail">
+        <PropertyRef Name="IdFo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblManagerSt_0_0">
+    <End Role="tblProject" Type="Self.tblProject" Multiplicity="1" />
+    <End Role="tblManagerSt" Type="Self.tblManagerSt" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblProject">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblManagerSt">
+        <PropertyRef Name="IdProject" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStrategiesBasic_0_0">
+    <End Role="tblProject" Type="Self.tblProject" Multiplicity="1" />
+    <End Role="tblStrategiesBasic" Type="Self.tblStrategiesBasic" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblProject">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblStrategiesBasic">
+        <PropertyRef Name="IdProject" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="StLiteDBModelStoreContainer">
+    <EntitySet Name="tblBsc" EntityType="Self.tblBsc" store:Type="Tables" />
+    <EntitySet Name="tblDa" EntityType="Self.tblDa" store:Type="Tables" />
+    <EntitySet Name="tblDaDetail" EntityType="Self.tblDaDetail" store:Type="Tables" />
+    <EntitySet Name="tblDiagram" EntityType="Self.tblDiagram" store:Type="Tables" />
+    <EntitySet Name="tblDo" EntityType="Self.tblDo" store:Type="Tables" />
+    <EntitySet Name="tblDoDetail" EntityType="Self.tblDoDetail" store:Type="Tables" />
+    <EntitySet Name="tblFa" EntityType="Self.tblFa" store:Type="Tables" />
+    <EntitySet Name="tblFaDetail" EntityType="Self.tblFaDetail" store:Type="Tables" />
+    <EntitySet Name="tblFo" EntityType="Self.tblFo" store:Type="Tables" />
+    <EntitySet Name="tblFoda" EntityType="Self.tblFoda" store:Type="Tables" />
+    <EntitySet Name="tblFodaDetail" EntityType="Self.tblFodaDetail" store:Type="Tables" />
+    <EntitySet Name="tblFoDetail" EntityType="Self.tblFoDetail" store:Type="Tables" />
+    <EntitySet Name="tblManagerSt" EntityType="Self.tblManagerSt" store:Type="Tables" />
+    <EntitySet Name="tblProject" EntityType="Self.tblProject" store:Type="Tables" />
+    <EntitySet Name="tblStrategiesBasic" EntityType="Self.tblStrategiesBasic" store:Type="Tables" />
+    <AssociationSet Name="FK_tblBsc_0_0" Association="Self.FK_tblBsc_0_0">
+      <End Role="tblProject" EntitySet="tblProject" />
+      <End Role="tblBsc" EntitySet="tblBsc" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblDa_0_0" Association="Self.FK_tblDa_0_0">
+      <End Role="tblProject" EntitySet="tblProject" />
+      <End Role="tblDa" EntitySet="tblDa" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblDaDetail_0_0" Association="Self.FK_tblDaDetail_0_0">
+      <End Role="tblDa" EntitySet="tblDa" />
+      <End Role="tblDaDetail" EntitySet="tblDaDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblDiagram_0_0" Association="Self.FK_tblDiagram_0_0">
+      <End Role="tblProject" EntitySet="tblProject" />
+      <End Role="tblDiagram" EntitySet="tblDiagram" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblDo_0_0" Association="Self.FK_tblDo_0_0">
+      <End Role="tblProject" EntitySet="tblProject" />
+      <End Role="tblDo" EntitySet="tblDo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblDoDetail_0_0" Association="Self.FK_tblDoDetail_0_0">
+      <End Role="tblDo" EntitySet="tblDo" />
+      <End Role="tblDoDetail" EntitySet="tblDoDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblFa_0_0" Association="Self.FK_tblFa_0_0">
+      <End Role="tblProject" EntitySet="tblProject" />
+      <End Role="tblFa" EntitySet="tblFa" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblFaDetail_0_0" Association="Self.FK_tblFaDetail_0_0">
+      <End Role="tblFa" EntitySet="tblFa" />
+      <End Role="tblFaDetail" EntitySet="tblFaDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblFo_0_0" Association="Self.FK_tblFo_0_0">
+      <End Role="tblProject" EntitySet="tblProject" />
+      <End Role="tblFo" EntitySet="tblFo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblFoda_0_0" Association="Self.FK_tblFoda_0_0">
+      <End Role="tblProject" EntitySet="tblProject" />
+      <End Role="tblFoda" EntitySet="tblFoda" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblFodaDetail_0_0" Association="Self.FK_tblFodaDetail_0_0">
+      <End Role="tblFoda" EntitySet="tblFoda" />
+      <End Role="tblFodaDetail" EntitySet="tblFodaDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblFoDetail_0_0" Association="Self.FK_tblFoDetail_0_0">
+      <End Role="tblFo" EntitySet="tblFo" />
+      <End Role="tblFoDetail" EntitySet="tblFoDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblManagerSt_0_0" Association="Self.FK_tblManagerSt_0_0">
+      <End Role="tblProject" EntitySet="tblProject" />
+      <End Role="tblManagerSt" EntitySet="tblManagerSt" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStrategiesBasic_0_0" Association="Self.FK_tblStrategiesBasic_0_0">
+      <End Role="tblProject" EntitySet="tblProject" />
+      <End Role="tblStrategiesBasic" EntitySet="tblStrategiesBasic" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
