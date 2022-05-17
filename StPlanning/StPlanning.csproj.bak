@@ -1,0 +1,706 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7361A12F-6E82-4A0F-8A25-0939D2B5DD9D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StPlanning</RootNamespace>
+    <AssemblyName>StPlanning</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>0a43cddb</NuGetPackageImportStamp>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>C:\Users\nparra.ECUASFICONT\Desktop\StPlanningVersions\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>2.1.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>bars.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>23AA82C67CB2E86784E92C549EA741A9E0C207AD</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>StPlanning_ClaveTemporal.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="AutoMapper, Version=4.2.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.4.2.1\lib\net45\AutoMapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v14.2, Version=14.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Images.v14.2, Version=14.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v14.2.Core, Version=14.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v14.2.Core, Version=14.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v14.2, Version=14.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v14.2, Version=14.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v14.2, Version=14.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v14.2, Version=14.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v14.2, Version=14.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v14.2, Version=14.2.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite.CodeFirst, Version=0.9.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\SQLite.CodeFirst.0.9.8.0\lib\net45\SQLite.CodeFirst.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.SQLite, Version=1.0.97.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\System.Data.SQLite.Core.1.0.97.0\lib\net45\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6, Version=1.0.97.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\System.Data.SQLite.EF6.1.0.97.0\lib\net45\System.Data.SQLite.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.97.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\System.Data.SQLite.Linq.1.0.97.0\lib\net45\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Transactions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SplashScreen1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SplashScreen1.Designer.cs">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WaitForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WaitForm1.Designer.cs">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\BscPubLevel4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\BscPubLevel4.Designer.cs">
+      <DependentUpon>BscPubLevel4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\BscPubLevel3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\BscPubLevel3.Designer.cs">
+      <DependentUpon>BscPubLevel3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\BscPubLevel2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\BscPubLevel2.Designer.cs">
+      <DependentUpon>BscPubLevel2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\BscPubLevel1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\BscPubLevel1.Designer.cs">
+      <DependentUpon>BscPubLevel1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\BscLevel4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\BscLevel4.Designer.cs">
+      <DependentUpon>BscLevel4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\BscLevel3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\BscLevel3.Designer.cs">
+      <DependentUpon>BscLevel3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\BscLevel2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\BscLevel2.Designer.cs">
+      <DependentUpon>BscLevel2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\InitScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\InitScreen.Designer.cs">
+      <DependentUpon>InitScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\MatrixLevel4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\MatrixLevel4.Designer.cs">
+      <DependentUpon>MatrixLevel4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\MatrixLevel3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\MatrixLevel3.Designer.cs">
+      <DependentUpon>MatrixLevel3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\MatrixLevel2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\MatrixLevel2.Designer.cs">
+      <DependentUpon>MatrixLevel2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\BscLevel1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\BscLevel1.Designer.cs">
+      <DependentUpon>BscLevel1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\MatrixManagerSt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\MatrixManagerSt.Designer.cs">
+      <DependentUpon>MatrixManagerSt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\MatrixStrategies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\MatrixStrategies.Designer.cs">
+      <DependentUpon>MatrixStrategies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\MatrixDA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\MatrixDA.Designer.cs">
+      <DependentUpon>MatrixDA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\MatrixFA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\MatrixFA.Designer.cs">
+      <DependentUpon>MatrixFA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\MatrixDO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\MatrixDO.Designer.cs">
+      <DependentUpon>MatrixDO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\MatrixFO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\MatrixFO.Designer.cs">
+      <DependentUpon>MatrixFO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\MatrixFODA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\MatrixFODA.Designer.cs">
+      <DependentUpon>MatrixFODA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\EditProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\EditProject.Designer.cs">
+      <DependentUpon>EditProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\OpenProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\OpenProject.Designer.cs">
+      <DependentUpon>OpenProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\NewProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\NewProject.Designer.cs">
+      <DependentUpon>NewProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlow\ClassTest.cs" />
+    <Compile Include="WorkFlow\Collection\%28Delegates%29.cs" />
+    <Compile Include="WorkFlow\Collection\%28Exceptions%29.cs" />
+    <Compile Include="WorkFlow\Collection\Comparers.cs" />
+    <Compile Include="WorkFlow\Collection\Dictionary.cs" />
+    <Compile Include="WorkFlow\Collection\Elements.cs" />
+    <Compile Include="WorkFlow\Collection\List.cs" />
+    <Compile Include="WorkFlow\Collection\ListFactory.cs" />
+    <Compile Include="WorkFlow\Collection\PriorityQueue.cs" />
+    <Compile Include="WorkFlow\Draw\%28Delegates%29.cs" />
+    <Compile Include="WorkFlow\Draw\%28Enumerations%29.cs" />
+    <Compile Include="WorkFlow\Draw\%28EventArgs%29.cs" />
+    <Compile Include="WorkFlow\Draw\%28Exceptions%29.cs" />
+    <Compile Include="WorkFlow\Draw\%28Interfaces%29.cs" />
+    <Compile Include="WorkFlow\Draw\AbstractCommand.cs" />
+    <Compile Include="WorkFlow\Draw\Arrow.cs" />
+    <Compile Include="WorkFlow\Draw\BlockLine.cs" />
+    <Compile Include="WorkFlow\Draw\Clipboard.cs" />
+    <Compile Include="WorkFlow\Draw\ClipboardCommand.cs" />
+    <Compile Include="WorkFlow\Draw\Command.cs" />
+    <Compile Include="WorkFlow\Draw\CommandFactory.cs" />
+    <Compile Include="WorkFlow\Draw\CommandStack.cs" />
+    <Compile Include="WorkFlow\Draw\ComplexLine.cs" />
+    <Compile Include="WorkFlow\Draw\ComplexShape.cs" />
+    <Compile Include="WorkFlow\Draw\Connector.cs" />
+    <Compile Include="WorkFlow\Draw\Controller.cs" />
+    <Compile Include="WorkFlow\Draw\Curve.cs" />
+    <Compile Include="WorkFlow\Draw\Element.cs" />
+    <Compile Include="WorkFlow\Draw\ElementList.cs" />
+    <Compile Include="WorkFlow\Draw\ElementMomento.cs" />
+    <Compile Include="WorkFlow\Draw\Elements.cs" />
+    <Compile Include="WorkFlow\Draw\Factory.cs" />
+    <Compile Include="WorkFlow\Draw\Geometry.cs" />
+    <Compile Include="WorkFlow\Draw\Group.cs" />
+    <Compile Include="WorkFlow\Draw\Handles.cs" />
+    <Compile Include="WorkFlow\Draw\Image.cs" />
+    <Compile Include="WorkFlow\Draw\Label.cs" />
+    <Compile Include="WorkFlow\Draw\LabelList.cs" />
+    <Compile Include="WorkFlow\Draw\LabelMomento.cs" />
+    <Compile Include="WorkFlow\Draw\Layer.cs" />
+    <Compile Include="WorkFlow\Draw\Layers.cs" />
+    <Compile Include="WorkFlow\Draw\Line.cs" />
+    <Compile Include="WorkFlow\Draw\Lines.cs" />
+    <Compile Include="WorkFlow\Draw\Link.cs" />
+    <Compile Include="WorkFlow\Draw\Marker.cs" />
+    <Compile Include="WorkFlow\Draw\MarkerBase.cs" />
+    <Compile Include="WorkFlow\Draw\Model.cs" />
+    <Compile Include="WorkFlow\Draw\ModelCommand.cs" />
+    <Compile Include="WorkFlow\Draw\ModelMomento.cs" />
+    <Compile Include="WorkFlow\Draw\Momento.cs" />
+    <Compile Include="WorkFlow\Draw\MouseCommand.cs" />
+    <Compile Include="WorkFlow\Draw\MouseElements.cs" />
+    <Compile Include="WorkFlow\Draw\Origin.cs" />
+    <Compile Include="WorkFlow\Draw\Port.cs" />
+    <Compile Include="WorkFlow\Draw\Ports.cs" />
+    <Compile Include="WorkFlow\Draw\PropertyCommand.cs" />
+    <Compile Include="WorkFlow\Draw\RotateCommand.cs" />
+    <Compile Include="WorkFlow\Draw\ScaleCommand.cs" />
+    <Compile Include="WorkFlow\Draw\Segment.cs" />
+    <Compile Include="WorkFlow\Draw\Segments.cs" />
+    <Compile Include="WorkFlow\Draw\Shape.cs" />
+    <Compile Include="WorkFlow\Draw\Shapes.cs" />
+    <Compile Include="WorkFlow\Draw\Singleton.cs" />
+    <Compile Include="WorkFlow\Draw\Solid.cs" />
+    <Compile Include="WorkFlow\Draw\Solids.cs" />
+    <Compile Include="WorkFlow\Draw\Stencil.cs" />
+    <Compile Include="WorkFlow\Draw\StencilItem.cs" />
+    <Compile Include="WorkFlow\Draw\Table.cs" />
+    <Compile Include="WorkFlow\Draw\TableGroup.cs" />
+    <Compile Include="WorkFlow\Draw\TableGroups.cs" />
+    <Compile Include="WorkFlow\Draw\TableItem.cs" />
+    <Compile Include="WorkFlow\Draw\TableItems.cs" />
+    <Compile Include="WorkFlow\Draw\TablePort.cs" />
+    <Compile Include="WorkFlow\Draw\TableRow.cs" />
+    <Compile Include="WorkFlow\Draw\TableRows.cs" />
+    <Compile Include="WorkFlow\Draw\TextCommand.cs" />
+    <Compile Include="WorkFlow\Draw\Theme.cs" />
+    <Compile Include="WorkFlow\Draw\TransformCommand.cs" />
+    <Compile Include="WorkFlow\Draw\TranslateCommand.cs" />
+    <Compile Include="WorkFlow\Draw\TreeLine.cs" />
+    <Compile Include="WorkFlow\Draw\Views.cs" />
+    <Compile Include="WorkFlow\Forms\%28Delegates%29.cs" />
+    <Compile Include="WorkFlow\Forms\%28EventArgs%29.cs" />
+    <Compile Include="WorkFlow\Forms\%28Exceptions%29.cs" />
+    <Compile Include="WorkFlow\Forms\%28Interfaces%29.cs" />
+    <Compile Include="WorkFlow\Forms\ControlRender.cs" />
+    <Compile Include="WorkFlow\Forms\Diagram.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\Forms\frmDiagram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\Forms\frmDiagram.Designer.cs">
+      <DependentUpon>frmDiagram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlow\Forms\frmDiagramTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\Forms\frmDiagramTest.Designer.cs">
+      <DependentUpon>frmDiagramTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlow\Forms\frmDiagramTest_Backup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\Forms\frmDiagramTest_Backup.Designer.cs">
+      <DependentUpon>frmDiagramTest_Backup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlow\Forms\LabelEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\Forms\Margin.cs" />
+    <Compile Include="WorkFlow\Forms\Paging.cs" />
+    <Compile Include="WorkFlow\Forms\Rendering\%28Interfaces%29.cs" />
+    <Compile Include="WorkFlow\Forms\Rendering\BlockLineRender.cs" />
+    <Compile Include="WorkFlow\Forms\Rendering\ComplexLineRender.cs" />
+    <Compile Include="WorkFlow\Forms\Rendering\ComplexShapeRender.cs" />
+    <Compile Include="WorkFlow\Forms\Rendering\ConnectorRender.cs" />
+    <Compile Include="WorkFlow\Forms\Rendering\ElementRender.cs" />
+    <Compile Include="WorkFlow\Forms\Rendering\GroupRender.cs" />
+    <Compile Include="WorkFlow\Forms\Rendering\ImageRender.cs" />
+    <Compile Include="WorkFlow\Forms\Rendering\LabelRender.cs" />
+    <Compile Include="WorkFlow\Forms\Rendering\LinkRender.cs" />
+    <Compile Include="WorkFlow\Forms\Rendering\MarkerBaseRender.cs" />
+    <Compile Include="WorkFlow\Forms\Rendering\MarkerRender.cs" />
+    <Compile Include="WorkFlow\Forms\Rendering\PortRender.cs" />
+    <Compile Include="WorkFlow\Forms\Rendering\Render.cs" />
+    <Compile Include="WorkFlow\Forms\Rendering\ShapeRender.cs" />
+    <Compile Include="WorkFlow\Forms\Rendering\SolidRender.cs" />
+    <Compile Include="WorkFlow\Forms\Rendering\TableGroupRender.cs" />
+    <Compile Include="WorkFlow\Forms\Rendering\TableItemRender.cs" />
+    <Compile Include="WorkFlow\Forms\Rendering\TableRender.cs" />
+    <Compile Include="WorkFlow\Forms\Rendering\TableRowRender.cs" />
+    <Compile Include="WorkFlow\Forms\Rendering\TreeLineRender.cs" />
+    <Compile Include="WorkFlow\Forms\Tab.cs" />
+    <Compile Include="WorkFlow\Forms\View.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkFlow\Forms\View.designer.cs">
+      <DependentUpon>View.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlow\Layouts\BinaryGrid.cs" />
+    <Compile Include="WorkFlow\Layouts\MovementCostQueue.cs" />
+    <Compile Include="WorkFlow\Layouts\Route.cs" />
+    <Compile Include="WorkFlow\Layouts\RouteNode.cs" />
+    <Compile Include="WorkFlow\Layouts\TerrainPoint.cs" />
+    <Compile Include="WorkFlow\Layouts\TotalCostQueue.cs" />
+    <Compile Include="WorkFlow\Serialization\CustomBinder.cs" />
+    <Compile Include="WorkFlow\Serialization\ElementListSerialize.cs" />
+    <Compile Include="WorkFlow\Serialization\ElementSerialize.cs" />
+    <Compile Include="WorkFlow\Serialization\ElementsSerialize.cs" />
+    <Compile Include="WorkFlow\Serialization\ImageSerialize.cs" />
+    <Compile Include="WorkFlow\Serialization\LabelSerialize.cs" />
+    <Compile Include="WorkFlow\Serialization\LayerSerialize.cs" />
+    <Compile Include="WorkFlow\Serialization\LayersSerialize.cs" />
+    <Compile Include="WorkFlow\Serialization\LineSerialize.cs" />
+    <Compile Include="WorkFlow\Serialization\ModelSerialize.cs" />
+    <Compile Include="WorkFlow\Serialization\OriginSerialize.cs" />
+    <Compile Include="WorkFlow\Serialization\ResourceEntry.cs" />
+    <Compile Include="WorkFlow\Serialization\Serialize.cs" />
+    <Compile Include="WorkFlow\Serialization\ShapeSerialize.cs" />
+    <Compile Include="WorkFlow\Serialization\SolidSerialize.cs" />
+    <Compile Include="WorkFlow\Serialization\StencilItemSerialize.cs" />
+    <Compile Include="WorkFlow\Serialization\XmlFormatter.cs" />
+    <EmbeddedResource Include="Forms\Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SplashScreen1.es.resx">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WaitForm1.resx">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UserControls\About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\BscPubLevel4.resx">
+      <DependentUpon>BscPubLevel4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\BscPubLevel3.resx">
+      <DependentUpon>BscPubLevel3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\BscPubLevel2.resx">
+      <DependentUpon>BscPubLevel2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\BscPubLevel1.resx">
+      <DependentUpon>BscPubLevel1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\BscLevel4.resx">
+      <DependentUpon>BscLevel4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\BscLevel3.resx">
+      <DependentUpon>BscLevel3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\BscLevel2.resx">
+      <DependentUpon>BscLevel2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\InitScreen.resx">
+      <DependentUpon>InitScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\MatrixLevel4.resx">
+      <DependentUpon>MatrixLevel4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\MatrixLevel3.resx">
+      <DependentUpon>MatrixLevel3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\MatrixLevel2.resx">
+      <DependentUpon>MatrixLevel2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\BscLevel1.resx">
+      <DependentUpon>BscLevel1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\MatrixManagerSt.resx">
+      <DependentUpon>MatrixManagerSt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\MatrixStrategies.resx">
+      <DependentUpon>MatrixStrategies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\MatrixDA.resx">
+      <DependentUpon>MatrixDA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\MatrixFA.resx">
+      <DependentUpon>MatrixFA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\MatrixDO.resx">
+      <DependentUpon>MatrixDO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\MatrixFO.resx">
+      <DependentUpon>MatrixFO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\MatrixFODA.resx">
+      <DependentUpon>MatrixFODA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\EditProject.resx">
+      <DependentUpon>EditProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\OpenProject.resx">
+      <DependentUpon>OpenProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\NewProject.resx">
+      <DependentUpon>NewProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkFlow\Forms\Diagram.resx">
+      <DependentUpon>Diagram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkFlow\Forms\frmDiagram.resx">
+      <DependentUpon>frmDiagram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkFlow\Forms\frmDiagramTest.resx">
+      <DependentUpon>frmDiagramTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkFlow\Forms\frmDiagramTest_Backup.resx">
+      <DependentUpon>frmDiagramTest_Backup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkFlow\Forms\LabelEdit.resx">
+      <DependentUpon>LabelEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Archivos_Varios\FODA_BASE.xlsx" />
+    <None Include="Archivos_Varios\StLiteDB_20160525.sqlite" />
+    <None Include="Archivos_Varios\StLiteDB_20160607.sqlite" />
+    <None Include="Archivos_Varios\StLiteDB_21060617.sqlite" />
+    <None Include="Instaladores_Base\2. EFTools6.1.3ForVS2013.msi" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="StPlanning_ClaveTemporal.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\StPlanning.BL\StPlanning.BL.csproj">
+      <Project>{97e5bff9-bfce-4d3d-8d31-a7490ea9a6f1}</Project>
+      <Name>StPlanning.BL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bars.ico" />
+    <Content Include="excel_circle.ico" />
+    <Content Include="Instaladores_Base\1. sqlite-netFx451-setup-bundle-x86-2013-1.0.97.0.exe" />
+    <Content Include="Instaladores_Base\AccessDatabaseEngine.exe" />
+    <Content Include="Instaladores_Base\InstallShield2015LimitedEdition.exe" />
+    <None Include="Resources\Info_16x16.png" />
+    <None Include="Resources\view.bmp" />
+    <None Include="Resources\ruler.bmp" />
+    <None Include="Resources\publicmethod.gif" />
+    <None Include="Resources\publicfield.gif" />
+    <None Include="Resources\protectedmethod.gif" />
+    <None Include="Resources\protectedfield.gif" />
+    <None Include="Resources\palette.bmp" />
+    <None Include="Resources\overview.bmp" />
+    <None Include="Resources\flowchart.bmp" />
+    <None Include="Resources\diagram.bmp" />
+    <None Include="Resources\InitScreen_Adjusted.png" />
+    <None Include="Resources\logo1.png" />
+    <None Include="Resources\LOGO_ESPE_NO_FONDO2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\System.Data.SQLite.Core.1.0.97.0\build\net45\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.97.0\build\net45\System.Data.SQLite.Core.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Habilite la restauración del paquete NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\System.Data.SQLite.Core.1.0.97.0\build\net45\System.Data.SQLite.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.Data.SQLite.Core.1.0.97.0\build\net45\System.Data.SQLite.Core.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EB6DAA7E-598A-46A7-B7F6-B7AFD7550774}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StPlanning.WorkFlow</RootNamespace>
+    <AssemblyName>StPlanning.WorkFlow</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      
+    </Reference>
+    <Reference Include="DevExpress.Data.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      
+    </Reference>
+    <Reference Include="DevExpress.Data.Desktop.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      
+    </Reference>
+    <Reference Include="DevExpress.Utils.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClassTest.cs" />
+    <Compile Include="Collection\%28Delegates%29.cs" />
+    <Compile Include="Collection\%28Exceptions%29.cs" />
+    <Compile Include="Collection\Comparers.cs" />
+    <Compile Include="Collection\Dictionary.cs" />
+    <Compile Include="Collection\Elements.cs" />
+    <Compile Include="Collection\List.cs" />
+    <Compile Include="Collection\ListFactory.cs" />
+    <Compile Include="Collection\PriorityQueue.cs" />
+    <Compile Include="Draw\%28Delegates%29.cs" />
+    <Compile Include="Draw\%28Enumerations%29.cs" />
+    <Compile Include="Draw\%28EventArgs%29.cs" />
+    <Compile Include="Draw\%28Exceptions%29.cs" />
+    <Compile Include="Draw\%28Interfaces%29.cs" />
+    <Compile Include="Draw\AbstractCommand.cs" />
+    <Compile Include="Draw\Arrow.cs" />
+    <Compile Include="Draw\BlockLine.cs" />
+    <Compile Include="Draw\Clipboard.cs" />
+    <Compile Include="Draw\ClipboardCommand.cs" />
+    <Compile Include="Draw\Command.cs" />
+    <Compile Include="Draw\CommandFactory.cs" />
+    <Compile Include="Draw\CommandStack.cs" />
+    <Compile Include="Draw\ComplexLine.cs" />
+    <Compile Include="Draw\ComplexShape.cs" />
+    <Compile Include="Draw\Connector.cs" />
+    <Compile Include="Draw\Controller.cs" />
+    <Compile Include="Draw\Curve.cs" />
+    <Compile Include="Draw\Element.cs" />
+    <Compile Include="Draw\ElementList.cs" />
+    <Compile Include="Draw\ElementMomento.cs" />
+    <Compile Include="Draw\Elements.cs" />
+    <Compile Include="Draw\Factory.cs" />
+    <Compile Include="Draw\Geometry.cs" />
+    <Compile Include="Draw\Group.cs" />
+    <Compile Include="Draw\Handles.cs" />
+    <Compile Include="Draw\Image.cs" />
+    <Compile Include="Draw\Label.cs" />
+    <Compile Include="Draw\LabelList.cs" />
+    <Compile Include="Draw\LabelMomento.cs" />
+    <Compile Include="Draw\Layer.cs" />
+    <Compile Include="Draw\Layers.cs" />
+    <Compile Include="Draw\Line.cs" />
+    <Compile Include="Draw\Lines.cs" />
+    <Compile Include="Draw\Link.cs" />
+    <Compile Include="Draw\Marker.cs" />
+    <Compile Include="Draw\MarkerBase.cs" />
+    <Compile Include="Draw\Model.cs" />
+    <Compile Include="Draw\ModelCommand.cs" />
+    <Compile Include="Draw\ModelMomento.cs" />
+    <Compile Include="Draw\Momento.cs" />
+    <Compile Include="Draw\MouseCommand.cs" />
+    <Compile Include="Draw\MouseElements.cs" />
+    <Compile Include="Draw\Origin.cs" />
+    <Compile Include="Draw\Port.cs" />
+    <Compile Include="Draw\Ports.cs" />
+    <Compile Include="Draw\PropertyCommand.cs" />
+    <Compile Include="Draw\RotateCommand.cs" />
+    <Compile Include="Draw\ScaleCommand.cs" />
+    <Compile Include="Draw\Segment.cs" />
+    <Compile Include="Draw\Segments.cs" />
+    <Compile Include="Draw\Shape.cs" />
+    <Compile Include="Draw\Shapes.cs" />
+    <Compile Include="Draw\Singleton.cs" />
+    <Compile Include="Draw\Solid.cs" />
+    <Compile Include="Draw\Solids.cs" />
+    <Compile Include="Draw\Stencil.cs" />
+    <Compile Include="Draw\StencilItem.cs" />
+    <Compile Include="Draw\Table.cs" />
+    <Compile Include="Draw\TableGroup.cs" />
+    <Compile Include="Draw\TableGroups.cs" />
+    <Compile Include="Draw\TableItem.cs" />
+    <Compile Include="Draw\TableItems.cs" />
+    <Compile Include="Draw\TablePort.cs" />
+    <Compile Include="Draw\TableRow.cs" />
+    <Compile Include="Draw\TableRows.cs" />
+    <Compile Include="Draw\TextCommand.cs" />
+    <Compile Include="Draw\Theme.cs" />
+    <Compile Include="Draw\TransformCommand.cs" />
+    <Compile Include="Draw\TranslateCommand.cs" />
+    <Compile Include="Draw\TreeLine.cs" />
+    <Compile Include="Draw\Views.cs" />
+    <Compile Include="Forms\%28Delegates%29.cs" />
+    <Compile Include="Forms\%28EventArgs%29.cs" />
+    <Compile Include="Forms\%28Exceptions%29.cs" />
+    <Compile Include="Forms\%28Interfaces%29.cs" />
+    <Compile Include="Forms\ControlRender.cs" />
+    <Compile Include="Forms\Diagram.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDiagram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDiagram.Designer.cs">
+      <DependentUpon>frmDiagram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDiagramTest_Backup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDiagramTest_Backup.Designer.cs">
+      <DependentUpon>frmDiagramTest_Backup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDiagramTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDiagramTest.Designer.cs">
+      <DependentUpon>frmDiagramTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LabelEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Margin.cs" />
+    <Compile Include="Forms\Paging.cs" />
+    <Compile Include="Forms\Rendering\%28Interfaces%29.cs" />
+    <Compile Include="Forms\Rendering\BlockLineRender.cs" />
+    <Compile Include="Forms\Rendering\ComplexLineRender.cs" />
+    <Compile Include="Forms\Rendering\ComplexShapeRender.cs" />
+    <Compile Include="Forms\Rendering\ConnectorRender.cs" />
+    <Compile Include="Forms\Rendering\ElementRender.cs" />
+    <Compile Include="Forms\Rendering\GroupRender.cs" />
+    <Compile Include="Forms\Rendering\ImageRender.cs" />
+    <Compile Include="Forms\Rendering\LabelRender.cs" />
+    <Compile Include="Forms\Rendering\LinkRender.cs" />
+    <Compile Include="Forms\Rendering\MarkerBaseRender.cs" />
+    <Compile Include="Forms\Rendering\MarkerRender.cs" />
+    <Compile Include="Forms\Rendering\PortRender.cs" />
+    <Compile Include="Forms\Rendering\Render.cs" />
+    <Compile Include="Forms\Rendering\ShapeRender.cs" />
+    <Compile Include="Forms\Rendering\SolidRender.cs" />
+    <Compile Include="Forms\Rendering\TableGroupRender.cs" />
+    <Compile Include="Forms\Rendering\TableItemRender.cs" />
+    <Compile Include="Forms\Rendering\TableRender.cs" />
+    <Compile Include="Forms\Rendering\TableRowRender.cs" />
+    <Compile Include="Forms\Rendering\TreeLineRender.cs" />
+    <Compile Include="Forms\Tab.cs" />
+    <Compile Include="Forms\View.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\View.designer.cs" />
+    <Compile Include="Layouts\BinaryGrid.cs" />
+    <Compile Include="Layouts\MovementCostQueue.cs" />
+    <Compile Include="Layouts\Route.cs" />
+    <Compile Include="Layouts\RouteNode.cs" />
+    <Compile Include="Layouts\TerrainPoint.cs" />
+    <Compile Include="Layouts\TotalCostQueue.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Serialization\CustomBinder.cs" />
+    <Compile Include="Serialization\ElementListSerialize.cs" />
+    <Compile Include="Serialization\ElementSerialize.cs" />
+    <Compile Include="Serialization\ElementsSerialize.cs" />
+    <Compile Include="Serialization\ImageSerialize.cs" />
+    <Compile Include="Serialization\LabelSerialize.cs" />
+    <Compile Include="Serialization\LayerSerialize.cs" />
+    <Compile Include="Serialization\LayersSerialize.cs" />
+    <Compile Include="Serialization\LineSerialize.cs" />
+    <Compile Include="Serialization\ModelSerialize.cs" />
+    <Compile Include="Serialization\OriginSerialize.cs" />
+    <Compile Include="Serialization\ResourceEntry.cs" />
+    <Compile Include="Serialization\Serialize.cs" />
+    <Compile Include="Serialization\ShapeSerialize.cs" />
+    <Compile Include="Serialization\SolidSerialize.cs" />
+    <Compile Include="Serialization\StencilItemSerialize.cs" />
+    <Compile Include="Serialization\XmlFormatter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\Diagram.resx">
+      <DependentUpon>Diagram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDiagram.resx">
+      <DependentUpon>frmDiagram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDiagramTest_Backup.resx">
+      <DependentUpon>frmDiagramTest_Backup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDiagramTest.resx">
+      <DependentUpon>frmDiagramTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LabelEdit.resx">
+      <DependentUpon>LabelEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diagram.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flowchart.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\overview.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\palette.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\protectedfield.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\protectedmethod.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\publicfield.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\publicmethod.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ruler.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
